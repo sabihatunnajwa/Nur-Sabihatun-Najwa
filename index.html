@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Najwaflix - Home</title>
+   
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Nur Sabihatun Najwa">
+
+    <meta name="description" content="Welcome to Najwaflix, a personal website showcasing my education, family, friends and memories.">
+
+    <meta name="keywords" content="Najwa, Personal Website, Education, Family, Friends, Memories, UiTM">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Header Banner -->
+<div class="hero">
+
+    <video autoplay muted loop playsinline>
+        <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+
+        <h1>NAJWAFLIX</h1>
+
+        <p>Streaming memories, one chapter at a time.</p>
+
+        <button onclick="enterWorld()">
+            Enter My World
+        </button>
+
+    </div>
+
+</div>
+
+<!-- Navigation Menu -->
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+    <a href="friends.html">Friends</a>
+    <a href="memories.html">My Memories</a>
+
+    <div class="dropdown">
+
+        <a href="#">Contact ▼</a>
+
+        <div class="dropdown-content">
+
+            <a href="https://wa.me/60123456789" target="_blank">WhatsApp</a>
+
+            <a href="https://instagram.com/sabbyelyse" target="_blank">Instagram</a>
+
+            <a href="https://tiktok.com/@sabbyzeyy" target="_blank">TikTok</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Featured Story -->
+
+<section class="featured" id="featured-story">
+
+    <h2>Featured Story</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="images/myself.jpeg" alt="Najwa">
+            <p>she love the make up</p>
+        </div>
+
+        <div class="card">
+            <img src="images/myself1.jpeg" alt="Najwa">
+            <p>she love her facecard</p>
+        </div>
+
+        <div class="card">
+            <img src="images/myself2.jpeg" alt="Najwa">
+            <p>she love mirror selfie</p>
+        </div>
+
+        <div class="card">
+            <img src="images/myself3.jpeg" alt="Najwa">
+            <p>she love hiking</p>
+        </div>
+
+    </div>
+
+</section>
+
+<hr>
+
+<!-- Continue Watching -->
+
+<h2>Continue Watching</h2>
+
+<div class="card-container">
+
+    <div class="card">
+        <a href="aboutme.html">
+            <img src="images/aboutme.jpeg">
+            <h3>About Me</h3>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="education.html">
+            <img src="images/education.jpeg">
+            <h3>Education</h3>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="family.html">
+            <img src="images/family.jpeg">
+            <h3>Family</h3>
+        </a>
+    </div>
+
+    <div class="card">
+        <a href="friends.html">
+            <img src="images/friend.jpeg">
+            <h3>Friends</h3>
+        </a>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- Top Memories -->
+
+<h2>Top Memories</h2>
+
+<div class="memory-container">
+
+    <div class="memory">
+        <a href="memories.html">
+            <img src="images/cafehunting1.jpeg" alt="Cafe Hunting">
+            <p>Cafe Hunting</p>
+        </a>
+    </div>
+
+    <div class="memory">
+        <a href="memories.html">
+            <img src="images/snow1.jpeg" alt="Snow World">
+            <p>Snow World Adventure</p>
+        </a>
+    </div>
+
+    <div class="memory">
+        <a href="memories.html">
+            <img src="images/diploma1.jpeg" alt="Diploma Life">
+            <p>Diploma Life</p>
+        </a>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- Quote -->
+
+<div class="quote-box">
+
+    <h2>Quote of the Day</h2>
+
+    <p>
+        "Life is not measured by the number of breaths we take,
+        but by the moments that take our breath away."
+    </p>
+
+</div>
+<hr>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <p>© 2026 Najwa | All Rights Reserved</p>
+
+    <p>Recommended Browser: Google Chrome</p>
+
+    <p>Resolution: 1920 × 1080</p>
+
+    <p>Last Updated: 11 June 2026</p>
+
+</footer>
+
+<audio id="bgMusic" loop>
+    <source src="audio/coffeelofi.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function enterWorld() {
+
+    let music = document.getElementById("bgMusic");
+
+    music.play();
+
+    document.getElementById("featured-story")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+}
+</script>
+
+</body>
+
+</html>
